@@ -99,6 +99,10 @@ html, body {
 }
 
 /* Rest of the CSS remains unchanged */
+.answer-container-container {
+  flex-direction: column;
+}
+
 .answer-container {
   display: flex;
   flex-direction: column;
