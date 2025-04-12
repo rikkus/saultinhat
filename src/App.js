@@ -192,7 +192,12 @@ function App() {
         for (let i = 0; i <= currentQuestion; i++) {
           if (i < questions.length) {
             const currentOptions = questions[i].options;
-            const shuffled = [...currentOptions].sort(() => Math.random() - 0.5);
+            // Create array of options with their original indices
+            const optionsWithIndices = currentOptions.map((option, index) => ({
+              ...option,
+              originalIndex: index
+            }));
+            const shuffled = [...optionsWithIndices].sort(() => Math.random() - 0.5);
             allRandomizedOptions.push(shuffled);
           }
         }
@@ -201,7 +206,12 @@ function App() {
       } else if (currentQuestion < questions.length) {
         // If it's a new session, just randomize the first question
         const currentOptions = questions[currentQuestion].options;
-        const shuffled = [...currentOptions].sort(() => Math.random() - 0.5);
+        // Create array of options with their original indices
+        const optionsWithIndices = currentOptions.map((option, index) => ({
+          ...option,
+          originalIndex: index
+        }));
+        const shuffled = [...optionsWithIndices].sort(() => Math.random() - 0.5);
         setRandomizedOptions(shuffled);
       }
     }

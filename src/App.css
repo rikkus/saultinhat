@@ -99,10 +99,6 @@ html, body {
 }
 
 /* Rest of the CSS remains unchanged */
-.answer-container-container {
-  flex-direction: column;
-}
-
 .answer-container {
   display: flex;
   flex-direction: column;
@@ -214,6 +210,7 @@ button:hover {
 
 .welcome-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1200px;
@@ -330,5 +327,65 @@ button:hover {
 @media (max-width: 768px) {
   .answer-container-container {
     flex-direction: column;
+  }
+}
+
+.answer-container-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.answer-container {
+  width: 100%;
+  margin: 0;
+}
+
+.answer-button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  text-align: left;
+  padding: 12px 16px;
+  height: 100%;
+}
+
+.answer-image {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.answer-text {
+  flex: 1;
+  font-size: 1.1em;
+}
+
+/* Media queries for small screens */
+@media screen and (max-width: 768px) {
+  .answer-container-container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .answer-button {
+    padding: 8px 12px;
+    gap: 12px;
+  }
+
+  .answer-image {
+    width: 64px;
+    height: 64px;
+  }
+
+  .answer-text {
+    font-size: 1em;
   }
 }

@@ -18,11 +18,16 @@ const Question = ({
       />
     
       <h2>{questions[currentQuestion].question}</h2>
-      <div class="answer-container-container">
+      <div className="answer-container-container">
         {randomizedOptions.map((option, index) => (
           <div key={index} className="answer-container">
-            <button onClick={() => handleAnswer(option)}>
-              {option.text}
+            <button onClick={() => handleAnswer(option)} className="answer-button">
+              <img 
+                src={`./icons/${currentQuestion}-${option.originalIndex}.png`} 
+                alt={`Answer ${option.originalIndex + 1}`}
+                className="answer-image"
+              />
+              <span className="answer-text">{option.text}</span>
             </button>
             <div className="answer-points">
               {Object.entries(option.points).map(([house, points]) => (
