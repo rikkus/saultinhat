@@ -1,0 +1,34 @@
+[
+  {
+    "id": "gryffindor",
+    "name": "Gryffindor",
+    "colors": {
+      "primary": "#740001",
+      "secondary": "#D3A625"
+    }
+  },
+  {
+    "id": "slytherin",
+    "name": "Slytherin",
+    "colors": {
+      "primary": "#1a472a",
+      "secondary": "#5D5D5D"
+    }
+  },
+  {
+    "id": "hufflepuff",
+    "name": "Hufflepuff",
+    "colors": {
+      "primary": "#ecb939",
+      "secondary": "#000000"
+    }
+  },
+  {
+    "id": "ravenclaw",
+    "name": "Ravenclaw",
+    "colors": {
+      "primary": "#222f5b",
+      "secondary": "#946B2D"
+    }
+  }
+]

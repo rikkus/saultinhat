@@ -1,0 +1,182 @@
+[
+  { 
+    "question": "What is your favorite color?",
+    "options": [ 
+      { "text": "Red", "points": { "gryffindor": 1 } },
+      { "text": "Green", "points": { "slytherin": 1 } },
+      { "text": "Yellow", "points": { "hufflepuff": 1 } },
+      { "text": "Blue", "points": { "ravenclaw": 1 } }
+    ]
+  },
+  { 
+    "question": "Which animal would you bring to Hogwarts?",
+    "options": [ 
+      { "text": "Owl", "points": { "ravenclaw": 1 } },
+      { "text": "Cat", "points": { "gryffindor": 1 } },
+      { "text": "Toad", "points": { "hufflepuff": 1 } },
+      { "text": "Rat", "points": { "slytherin": 1 } }
+    ]
+  },
+  {
+    "question": "What is your favorite season?",
+    "options": [ 
+      { "text": "Spring", "points": { "hufflepuff": 1 } },
+      { "text": "Summer", "points": { "gryffindor": 1 } },
+      { "text": "Autumn", "points": { "ravenclaw": 1 } },
+      { "text": "Winter", "points": { "slytherin": 1 } }
+    ]
+  },
+  { 
+    "question": "Which class would you excel in?",
+    "options": [ 
+      { "text": "Potions", "points": { "slytherin": 1 } },
+      { "text": "Charms", "points": { "ravenclaw": 1 } },
+      { "text": "Herbology", "points": { "hufflepuff": 1 } },
+      { "text": "Transfiguration", "points": { "gryffindor": 1 } }
+    ]
+  },
+  {
+    "question": "What is your ideal vacation?",
+    "options": [ 
+      { "text": "Adventure", "points": { "gryffindor": 1 } },
+      { "text": "Relaxation", "points": { "hufflepuff": 1 } },
+      { "text": "Learning", "points": { "ravenclaw": 1 } },
+      { "text": "Socializing", "points": { "slytherin": 1 } }
+    ]
+  },
+  {
+    "question": "Which magical object would you choose?",
+    "options": [ 
+      { "text": "Wand", "points": { "gryffindor": 1 } },
+      { "text": "Broom", "points": { "slytherin": 1 } },
+      { "text": "Invisibility Cloak", "points": { "hufflepuff": 1 } },
+      { "text": "Time Turner", "points": { "ravenclaw": 1 } }
+    ]
+  },
+  {
+    "question": "What is your favorite time of day?",
+    "options": [ 
+      { "text": "Morning", "points": { "hufflepuff": 1 } },
+      { "text": "Afternoon", "points": { "gryffindor": 1 } },
+      { "text": "Evening", "points": { "ravenclaw": 1 } },
+      { "text": "Night", "points": { "slytherin": 1 } }
+    ]
+  },
+  {
+    "question": "Which magical creature would you befriend?",
+    "options": [ 
+      { "text": "Phoenix", "points": { "gryffindor": 1 } },
+      { "text": "Unicorn", "points": { "hufflepuff": 1 } },
+      { "text": "Dragon", "points": { "slytherin": 1 } },
+      { "text": "Hippogriff", "points": { "ravenclaw": 1 } }
+    ]
+  },
+  {
+    "question": "What is your approach to challenges?",
+    "options": [ 
+      { "text": "Brave", "points": { "gryffindor": 1 } },
+      { "text": "Cunning", "points": { "slytherin": 1 } },
+      { "text": "Loyal", "points": { "hufflepuff": 1 } },
+      { "text": "Wise", "points": { "ravenclaw": 1 } }
+    ]
+  },
+  {
+    "question": "Which element do you feel connected to?",
+    "options": [ 
+      { "text": "Fire", "points": { "gryffindor": 1 } },
+      { "text": "Water", "points": { "slytherin": 1 } },
+      { "text": "Earth", "points": { "hufflepuff": 1 } },
+      { "text": "Air", "points": { "ravenclaw": 1 } }
+    ]
+  },
+  {
+    "question": "What is your favorite magical sport?",
+    "options": [ 
+      { "text": "Quidditch", "points": { "gryffindor": 1 } },
+      { "text": "Wizard Chess", "points": { "ravenclaw": 1 } },
+      { "text": "Exploding Snap", "points": { "hufflepuff": 1 } },
+      { "text": "Gobstones", "points": { "slytherin": 1 } }
+    ]
+  },
+  {
+    "question": "Which historical figure do you admire?",
+    "options": [ 
+      { "text": "Godric Gryffindor", "points": { "gryffindor": 1 } },
+      { "text": "Salazar Slytherin", "points": { "slytherin": 1 } },
+      { "text": "Helga Hufflepuff", "points": { "hufflepuff": 1 } },
+      { "text": "Rowena Ravenclaw", "points": { "ravenclaw": 1 } }
+    ]
+  },
+  {
+    "question": "What is your ideal pet?",
+    "options": [ 
+      { "text": "Lion", "points": { "gryffindor": 1 } },
+      { "text": "Serpent", "points": { "slytherin": 1 } },
+      { "text": "Badger", "points": { "hufflepuff": 1 } },
+      { "text": "Eagle", "points": { "ravenclaw": 1 } }
+    ]
+  },
+  {
+    "question": "Which magical plant would you grow?",
+    "options": [ 
+      { "text": "Mandrake", "points": { "hufflepuff": 1 } },
+      { "text": "Devil's Snare", "points": { "slytherin": 1 } },
+      { "text": "Whomping Willow", "points": { "gryffindor": 1 } },
+      { "text": "Venomous Tentacula", "points": { "ravenclaw": 1 } }
+    ]
+  },
+  {
+    "question": "What is your favorite magical spell?",
+    "options": [ 
+      { "text": "Expecto Patronum", "points": { "gryffindor": 1 } },
+      { "text": "Avada Kedavra", "points": { "slytherin": 1 } },
+      { "text": "Lumos", "points": { "hufflepuff": 1 } },
+      { "text": "Wingardium Leviosa", "points": { "ravenclaw": 1 } }
+    ]
+  },
+  {
+    "question": "Which magical location would you visit?",
+    "options": [ 
+      { "text": "Hogwarts", "points": { "ravenclaw": 1 } },
+      { "text": "Diagon Alley", "points": { "hufflepuff": 1 } },
+      { "text": "Hogsmeade", "points": { "gryffindor": 1 } },
+      { "text": "The Forbidden Forest", "points": { "slytherin": 1 } }
+    ]
+  },
+  {
+    "question": "What is your favorite magical food?",
+    "options": [ 
+      { "text": "Butterbeer", "points": { "hufflepuff": 1 } },
+      { "text": "Pumpkin Pasties", "points": { "gryffindor": 1 } },
+      { "text": "Chocolate Frogs", "points": { "ravenclaw": 1 } },
+      { "text": "Bertie Bott's Every Flavour Beans", "points": { "slytherin": 1 } }
+    ]
+  },
+  {
+    "question": "Which magical book would you read?",
+    "options": [ 
+      { "text": "Hogwarts: A History", "points": { "ravenclaw": 1 } },
+      { "text": "Magical Me", "points": { "slytherin": 1 } },
+      { "text": "The Standard Book of Spells", "points": { "gryffindor": 1 } },
+      { "text": "Monster Book of Monsters", "points": { "hufflepuff": 1 } }
+    ]
+  },
+  {
+    "question": "What is your favorite magical holiday?",
+    "options": [ 
+      { "text": "Christmas", "points": { "hufflepuff": 1 } },
+      { "text": "Halloween", "points": { "slytherin": 1 } },
+      { "text": "Easter", "points": { "gryffindor": 1 } },
+      { "text": "Summer Solstice", "points": { "ravenclaw": 1 } }
+    ]
+  },
+  {
+    "question": "Which magical profession would you pursue?",
+    "options": [ 
+      { "text": "Auror", "points": { "gryffindor": 1 } },
+      { "text": "Healer", "points": { "hufflepuff": 1 } },
+      { "text": "Teacher", "points": { "ravenclaw": 1 } },
+      { "text": "Curse Breaker", "points": { "slytherin": 1 } }
+    ]
+  }
+]

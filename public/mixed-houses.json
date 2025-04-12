@@ -1,0 +1,65 @@
+[
+  {
+    "houses": ["gryffindor", "slytherin"],
+    "name": "Grytherin",
+    "id": "grytherin",
+    "image": "gryffindor-slytherin.jpg"
+  },
+  {
+    "houses": ["gryffindor", "hufflepuff"],
+    "name": "Huffledor",
+    "id": "huffledor",
+    "image": "gryffindor-hufflepuff.jpg"
+  },
+  {
+    "houses": ["gryffindor", "ravenclaw"],
+    "name": "Ravendor",
+    "id": "ravendor",
+    "image": "gryffindor-ravenclaw.jpg"
+  },
+  {
+    "houses": ["hufflepuff", "slytherin"],
+    "name": "Hufflein",
+    "id": "hufflein",
+    "image": "slytherin-hufflepuff.jpg"
+  },
+  {
+    "houses": ["ravenclaw", "slytherin"],
+    "name": "Slytherclaw",
+    "id": "slytherclaw",
+    "image": "slytherin-ravenclaw.jpg"
+  },
+  {
+    "houses": ["hufflepuff", "ravenclaw"],
+    "name": "Ravenpuff",
+    "id": "ravenpuff",
+    "image": "hufflepuff-ravenclaw.jpg"
+  },
+  {
+    "houses": ["hufflepuff", "ravenclaw", "slytherin"],
+    "name": "Ravenpuffin",
+    "id": "ravenpuffin"
+  },
+  {
+    "houses": ["gryffindor", "hufflepuff", "slytherin"],
+    "name": "Huffledorin",
+    "id": "huffledorin"
+  },
+  {
+    "houses": ["gryffindor", "ravenclaw", "slytherin"],
+    "name": "Gravenin",
+    "id": "gravenin",
+    "image": "gryffindor-slytherin-ravenclaw.jpg"
+  },
+  {
+    "houses": ["gryffindor", "hufflepuff", "ravenclaw"],
+    "name": "Huffinclaw",
+    "id": "huffinclaw",
+    "image": "gryffindor-hufflepuff-ravenclaw.jpg"
+  },
+  {
+    "houses": ["hufflepuff", "gryffindor", "ravenclaw", "slytherin"],
+    "name": "Huffleclawindor",
+    "id": "huffleclawindor"
+  }
+]

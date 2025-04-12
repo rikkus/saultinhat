@@ -1,0 +1,67 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug React App",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "runtimeExecutable": "/Applications/Google Chrome Dev.app/Contents/MacOS/Google Chrome Dev",
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/src/*",
+        "webpack:///./*": "${webRoot}/*",
+        "webpack:///./~/*": "${webRoot}/node_modules/*",
+        "webpack:///*": "*",
+        "webpack:///./src/*": "${webRoot}/src/*"
+      },
+      "preLaunchTask": "npm: debug",
+      "sourceMaps": true,
+      "trace": true,
+      "userDataDir": false
+    },
+    {
+      "name": "Debug React App (Node)",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "debug"],
+      "env": {
+        "BROWSER": "none",
+        "REACT_APP_DEBUG": "true",
+        "GENERATE_SOURCEMAP": "true"
+      },
+      "console": "integratedTerminal",
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/node_modules/**"
+      ],
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${workspaceFolder}/src/*",
+        "webpack:///./*": "${workspaceFolder}/*",
+        "webpack:///./~/*": "${workspaceFolder}/node_modules/*"
+      },
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ],
+      "restart": true,
+      "autoAttachChildProcesses": true
+    },
+    {
+      "name": "Attach to React App",
+      "type": "node",
+      "request": "attach",
+      "port": 9229,
+      "restart": true,
+      "sourceMaps": true,
+      "outFiles": ["${workspaceFolder}/build/**/*.js"],
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ]
+    }
+  ]
+} 

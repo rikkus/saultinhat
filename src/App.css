@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+:root {
+  --text: white;
+  --background: hsl(42, 67%, 9%);
+  --button-text: #eeeeee;
+  --button-background: hsl(42, 67%, 6%);
+  --button-background-hover: hsl(42, 67%, 8%);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--background);
+}
+
+.App {
+  font-family: 'MedievalSharp', cursive;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: var(--background);
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--text);
+  transition: background-color 0.5s ease;
+  position: relative;
+}
+
+.App-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../public/hall.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  z-index: 0;
+}
+
+.App-header.with-result::before {
+  display: none;
+}
+
+.App-header > * {
+  position: relative;
+  z-index: 1;
+}
+
+.App-header > div {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* Generic house point styling */
+.house-point {
+  display: inline-block;
+  padding: 2px 8px;
+  margin: 0 4px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Rest of the CSS remains unchanged */
+.answer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.answer-points {
+  visibility: hidden;
+  margin-top: 5px;
+  font-size: 0.7em;
+}
+
+.percentage-bar {
+  display: flex;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.percentage-legend {
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.legend-color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.bar-chart {
+  margin-top: 20px;
+}
+
+.result-container {
+  margin-bottom: 20px;
+}
+
+.banner {
+  margin-top: 20px;
+}
+
+.banner img {
+  max-width: 200px;
+  margin: 0 10px;
+}
+
+button {
+  font-family: inherit; 
+  background-color: var(--button-background);
+  border: none;
+  color: var(--button-text);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--button-background-hover);
+}
+
+.debug-panel {
+  color: var(--text);
+  background-color: var(--background);
+  transition: all 0.3s ease;
+  border-left: 1px solid #ccc;
+  padding: 1rem;
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  right: -30%;
+  width: 30%;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.debug-panel.open {
+  right: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
+.selected-houses {
+  padding: 8px 4px 8px 4px;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.show-result {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.welcome-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 1rem;
+}
+
+.welcome-text {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.welcome-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-text p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.begin-button {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--button-background);
+  color: var(--button-text);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'MedievalSharp', cursive;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.begin-button:hover {
+  background-color: var(--button-background-hover);
+}
+
+.potion-container {
+  perspective: 1000px;
+}
+
+.potion-container img {
+  transform-origin: center center;
+  transition: transform 0.5s ease;
+}
+
+.potion-container.drinking img {
+  animation: drinkPotion 0.5s ease forwards;
+}
+
+@keyframes drinkPotion {
+  0% {
+    transform: rotate(0deg);
+    filter: brightness(1) drop-shadow(0 0 5px rgba(0, 255, 0, 0.3));
+  }
+  100% {
+    transform: rotate(-90deg);
+    filter: brightness(0.7);
+  }
+}
+
+.potion-liquid {
+  animation: bubbles 2s ease-in-out infinite;
+}
+
+@keyframes bubbles {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}
