@@ -15,6 +15,7 @@ html, body {
   height: 100%;
   overflow: hidden;
   background-color: var(--background);
+  user-select: none;
 }
 
 .App {
@@ -102,11 +103,10 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
 }
 
 .answer-points {
-  visibility: hidden;
+  display: none;
   margin-top: 5px;
   font-size: 0.7em;
 }
@@ -210,7 +210,6 @@ button:hover {
 
 .welcome-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1200px;
@@ -295,6 +294,20 @@ button:hover {
     filter: brightness(0.7);
   }
 }
+.potion-shelf {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom, #4a3423 0%, #2c1810 100%);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+ 
 
 .potion-liquid {
   animation: bubbles 2s ease-in-out infinite;
@@ -306,5 +319,12 @@ button:hover {
   }
   50% {
     opacity: 1;
+  }
+}
+
+/* Media queries for small screens */
+@media (max-width: 768px) {
+  .answer-container-container {
+    flex-direction: column;
   }
 }

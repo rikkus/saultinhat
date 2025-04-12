@@ -18,7 +18,7 @@ const Question = ({
       />
     
       <h2>{questions[currentQuestion].question}</h2>
-      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem' }}>
+      <div class="answer-container-container">
         {randomizedOptions.map((option, index) => (
           <div key={index} className="answer-container">
             <button onClick={() => handleAnswer(option)}>

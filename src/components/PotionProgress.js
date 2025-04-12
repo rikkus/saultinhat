@@ -28,7 +28,6 @@ const PotionProgress = ({ totalQuestions, currentQuestion, answers }) => {
       margin: '0 auto 2rem',
       padding: '1rem',
       display: 'flex',
-      justifyContent: 'space-between',
       alignItems: 'center',
       background: 'linear-gradient(to bottom, #4a3423 0%, #2c1810 100%)',
       borderRadius: '8px',
